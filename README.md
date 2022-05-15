@@ -21,3 +21,14 @@
 * работа в портретной и ландшафтной ориентации экрана
 * сохранение изображения графика в файл
 
+### Стандартный пользовательский путь с сохранением графика в файл:
+
+<img src="https://user-images.githubusercontent.com/41988736/168483559-94bcbcab-87f8-4a44-b421-b0d779da7273.gif" width="300">
+
+### Ввод некорректных данных:
+
+<img src="https://user-images.githubusercontent.com/41988736/168483569-bcbd7cf1-d5ae-4d86-97a9-fc70aecc0204.gif" width="300">
+
+### Горизонтальная ориентация:
+
+<img src="https://user-images.githubusercontent.com/41988736/168483579-a7c142e9-7672-4236-b59c-61cf0bb159c5.gif" width="300">
