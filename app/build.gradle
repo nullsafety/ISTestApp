@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.interactivestandard.test"
+        minSdk 23
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation "androidx.core:core-ktx:$ktx_version"
+    implementation"androidx.constraintlayout:constraintlayout:$constrait_layout_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+
+    implementation "com.github.terrakok:cicerone:6.6"
+
+    implementation "androidx.recyclerview:recyclerview:$recycler_view_version"
+    implementation "com.google.code.gson:gson:$gson"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation("androidx.activity:activity-ktx:$activity_version")
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+
+    implementation "io.reactivex.rxjava2:rxandroid:$rxjava_android"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_gson"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_rxjava"
+    implementation "com.squareup.okhttp3:logging-interceptor:$retrofit_logging"
+
+    implementation "io.insert-koin:koin-android:$koin_version"
+}

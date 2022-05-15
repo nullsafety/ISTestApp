@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="btn_apply">Поехали</string>
+    <string name="btn_okay">Понятно</string>
+    <string name="btn_save_graph">Сохранить график</string>
+    <string name="text_x">X</string>
+    <string name="text_y">Y</string>
+    <string name="intro">Введите количество точек, которое необходимо отобразить на графике.</string>
+    <string name="error">Что-то пошло не так.</string>
+    <string name="graph_save_msg">График сохранен</string>
+</resources>
